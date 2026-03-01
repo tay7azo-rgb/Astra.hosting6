@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>Astra Hosting – استضافة بوتات ديسكورد</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(135deg, #071427, #0d1c33);
+    color: #e5e7eb;
+    overflow-x: hidden;
+  }
+
+  /* زجاج */
+  .glass {
+    backdrop-filter: blur(14px);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+  }
+
+  /* NAVBAR */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+  }
+
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #60a5fa;
+    letter-spacing: 1px;
+  }
+
+  .logo span {
+    color: #3b82f6;
+  }
+
+  .nav-links a {
+    margin-left: 20px;
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.2s;
+  }
+
+  .nav-links a:hover {
+    color: #60a5fa;
+  }
+
+  /* HERO */
+  .hero {
+    text-align: center;
+    padding: 140px 20px;
+    animation: fadeIn 1.5s ease;
+  }
+
+  .hero h1 {
+    font-size: 3.4rem;
+    color: #60a5fa;
+    margin-bottom: 10px;
+    animation: slideDown 1.2s ease;
+  }
+
+  .hero p {
+    font-size: 1.3rem;
+    opacity: 0.8;
+    margin-bottom: 25px;
+    animation: slideUp 1.2s ease;
+  }
+
+  .hero-btn {
+    padding: 14px 35px;
+    background: #2563eb;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.2s;
+    animation: fadeIn 2s ease;
+  }
+
+  .hero-btn:hover {
+    background: #1d4ed8;
+    transform: scale(1.05);
+  }
+
+  /* FEATURES */
+  .section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #60a5fa;
+    margin-top: 60px;
+  }
+
+  .features {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+  }
+
+  .feature-card {
+    width: 280px;
+    padding: 25px;
+    text-align: center;
+    transition: 0.3s;
+    animation: fadeIn 1.5s ease;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-8px);
+    border-color: #60a5fa;
+  }
+
+  .feature-card h3 {
+    color: #60a5fa;
+    margin-bottom: 10px;
+  }
+
+  /* PLANS */
+  .plans {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+  }
+
+  .plan-card {
+    width: 300px;
+    padding: 25px;
+    transition: 0.3s;
+  }
+
+  .plan-card:hover {
+    transform: translateY(-8px);
+    border-color: #60a5fa;
+  }
+
+  .plan-card h2 {
+    color: #60a5fa;
+    margin-bottom: 10px;
+  }
+
+  .plan-btn {
+    display: block;
+    margin-top: 15px;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+
+  .plan-btn:hover {
+    background: #1d4ed8;
+    transform: scale(1.05);
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+    color: #94a3b8;
+  }
+
+  /* ANIMATIONS */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar glass">
+  <div class="logo">Astra<span>Hosting</span></div>
+
+  <nav class="nav-links">
+    <a href="#">الرئيسية</a>
+    <a href="#">الباقات</a>
+    <a href="#">التجربة المجانية</a>
+    <a href="#">لوحة التحكم</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>استضافة بوتات ديسكورد باحترافية</h1>
+  <p>أداء عالي – حماية قوية – تشغيل 24/7 – تجربة مجانية لمدة 10 دقائق</p>
+  <a href="#" class="hero-btn">ابدأ الآن</a>
+</section>
+
+<!-- FEATURES -->
+<h2 class="section-title">لماذا Astra Hosting؟</h2>
+
+<section class="features">
+  <div class="feature-card glass">
+    <h3>⚡ سرعة خارقة</h3>
+    <p>خوادم قوية تضمن تشغيل بوتك بدون أي تأخير.</p>
+  </div>
+
+  <div class="feature-card glass">
+    <h3>🔒 حماية متقدمة</h3>
+    <p>جدار ناري + مراقبة مستمرة + نظام كشف هجمات.</p>
+  </div>
+
+  <div class="feature-card glass">
+    <h3>📈 استقرار دائم</h3>
+    <p>تشغيل 24/7 بدون توقف مع نظام مراقبة تلقائي.</p>
+  </div>
+
+  <div class="feature-card glass">
+    <h3>🛠 دعم فني</h3>
+    <p>فريق جاهز لمساعدتك في أي وقت.</p>
+  </div>
+</section>
+
+<!-- PLANS -->
+<h2 class="section-title">الباقات المتوفرة</h2>
+
+<section class="plans">
+  <div class="plan-card glass">
+    <h2>الباقة المجانية</h2>
+    <p>RAM: 512MB</p>
+    <p>Storage: 1GB</p>
+    <p>Bot Slots: 1</p>
+    <a href="#" class="plan-btn">ابدأ الآن</a>
+  </div>
+
+  <div class="plan-card glass">
+    <h2>الباقة الأساسية</h2>
+    <p>RAM: 1GB</p>
+    <p>Storage: 5GB</p>
+    <p>Bot Slots: 2</p>
+    <a href="#" class="plan-btn">اشترك الآن</a>
+  </div>
+
+  <div class="plan-card glass">
+    <h2>الباقة الاحترافية</h2>
+    <p>RAM: 2GB</p>
+    <p>Storage: 10GB</p>
+    <p>Bot Slots: 5</p>
+    <a href="#" class="plan-btn">اشترك الآن</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer glass">
+  © 2026 Astra Hosting – جميع الحقوق محفوظة  
+</footer>
+
+</body>
+</html>
